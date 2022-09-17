@@ -1,5 +1,5 @@
 """
-WSGI config for djangoProject1 project.
+WSGI djangoProject1 for djangoProject1 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
