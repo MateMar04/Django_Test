@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -78,8 +77,10 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=30)),
                 ('precio', models.IntegerField()),
                 ('stock', models.IntegerField()),
-                ('categoria', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='supermarket.categoria')),
-                ('proveedor', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='supermarket.proveedor')),
+                ('categoria',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='supermarket.categoria')),
+                ('proveedor',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='supermarket.proveedor')),
                 ('venta', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='supermarket.venta')),
             ],
         ),
